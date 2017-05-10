@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController">
+            <connections>
+                <outlet property="loginBtn" destination="gb9-9E-kYV" id="j4J-jW-qLH"/>
+                <outlet property="password" destination="ORY-j0-Ct7" id="Q6r-x7-fVh"/>
+                <outlet property="password2" destination="IAa-xf-Wkl" id="pNM-8T-ulY"/>
+                <outlet property="phone" destination="PCb-kL-sEb" id="zp6-Zq-vEM"/>
+                <outlet property="signBtn" destination="d1N-JV-Ele" id="sbE-Gx-yeE"/>
+                <outlet property="username" destination="t6F-gZ-rmv" id="Jqs-0u-UAR"/>
+                <outlet property="verifyBtn" destination="Wzh-J1-H0v" id="jSo-Gs-To6"/>
+                <outlet property="verifyCode" destination="rA1-eI-QHc" id="xBn-Q6-zlR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注  册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vol-bi-fLg">
+                    <rect key="frame" x="165" y="100" width="44" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6F-gZ-rmv">
+                    <rect key="frame" x="16" y="141" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密     码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORY-j0-Ct7">
+                    <rect key="frame" x="16" y="191" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="验证密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IAa-xf-Wkl">
+                    <rect key="frame" x="16" y="246" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="验证码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rA1-eI-QHc">
+                    <rect key="frame" x="16" y="352" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzh-J1-H0v">
+                    <rect key="frame" x="208" y="301" width="151" height="30"/>
+                    <color key="backgroundColor" red="0.20935437083244324" green="0.3014228343963623" blue="0.95888429880142212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="获取验证码">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1N-JV-Ele">
+                    <rect key="frame" x="16" y="411" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="注   册">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-9E-kYV">
+                    <rect key="frame" x="16" y="461" width="343" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="登   录">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCb-kL-sEb">
+                    <rect key="frame" x="16" y="301" width="172" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="172" id="07o-SG-Q44"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wzh-J1-H0v" firstAttribute="top" secondItem="IAa-xf-Wkl" secondAttribute="bottom" constant="25" id="0o4-nv-5a2"/>
+                <constraint firstItem="t6F-gZ-rmv" firstAttribute="top" secondItem="vol-bi-fLg" secondAttribute="bottom" constant="20" id="3V8-aQ-Quo"/>
+                <constraint firstItem="PCb-kL-sEb" firstAttribute="leading" secondItem="IAa-xf-Wkl" secondAttribute="leading" id="63w-Ak-pGU"/>
+                <constraint firstItem="gb9-9E-kYV" firstAttribute="trailing" secondItem="d1N-JV-Ele" secondAttribute="trailing" id="6mF-5C-fLU"/>
+                <constraint firstItem="gb9-9E-kYV" firstAttribute="leading" secondItem="d1N-JV-Ele" secondAttribute="leading" id="7Le-H2-Tvj"/>
+                <constraint firstItem="d1N-JV-Ele" firstAttribute="top" secondItem="rA1-eI-QHc" secondAttribute="bottom" constant="29" id="D70-gu-3mQ"/>
+                <constraint firstItem="IAa-xf-Wkl" firstAttribute="trailing" secondItem="ORY-j0-Ct7" secondAttribute="trailing" id="IbC-gr-4pX"/>
+                <constraint firstItem="ORY-j0-Ct7" firstAttribute="top" secondItem="t6F-gZ-rmv" secondAttribute="bottom" constant="20" id="JMm-hA-UAp"/>
+                <constraint firstItem="vol-bi-fLg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="JeN-HS-GVu"/>
+                <constraint firstItem="vol-bi-fLg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K2O-n4-iNK"/>
+                <constraint firstItem="d1N-JV-Ele" firstAttribute="trailing" secondItem="rA1-eI-QHc" secondAttribute="trailing" id="PJT-ze-BlL"/>
+                <constraint firstItem="rA1-eI-QHc" firstAttribute="leading" secondItem="IAa-xf-Wkl" secondAttribute="leading" id="RbA-iA-fJ0"/>
+                <constraint firstAttribute="trailing" secondItem="t6F-gZ-rmv" secondAttribute="trailing" constant="16" id="RsQ-mb-qLa"/>
+                <constraint firstItem="PCb-kL-sEb" firstAttribute="top" secondItem="IAa-xf-Wkl" secondAttribute="bottom" constant="25" id="YY2-Hx-Tcd"/>
+                <constraint firstItem="IAa-xf-Wkl" firstAttribute="leading" secondItem="ORY-j0-Ct7" secondAttribute="leading" id="YvP-cq-47K"/>
+                <constraint firstItem="Wzh-J1-H0v" firstAttribute="leading" secondItem="PCb-kL-sEb" secondAttribute="trailing" constant="20" id="aH6-TN-zqt"/>
+                <constraint firstItem="IAa-xf-Wkl" firstAttribute="top" secondItem="ORY-j0-Ct7" secondAttribute="bottom" constant="25" id="bTj-U2-TwF"/>
+                <constraint firstItem="ORY-j0-Ct7" firstAttribute="leading" secondItem="t6F-gZ-rmv" secondAttribute="leading" id="bsg-i7-Ota"/>
+                <constraint firstItem="d1N-JV-Ele" firstAttribute="leading" secondItem="rA1-eI-QHc" secondAttribute="leading" id="fWi-Py-faK"/>
+                <constraint firstItem="rA1-eI-QHc" firstAttribute="trailing" secondItem="IAa-xf-Wkl" secondAttribute="trailing" id="fsp-sV-86L"/>
+                <constraint firstItem="ORY-j0-Ct7" firstAttribute="trailing" secondItem="t6F-gZ-rmv" secondAttribute="trailing" id="lAc-0K-iqa"/>
+                <constraint firstItem="Wzh-J1-H0v" firstAttribute="centerY" secondItem="PCb-kL-sEb" secondAttribute="centerY" id="pmv-Rw-YjE"/>
+                <constraint firstItem="t6F-gZ-rmv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="sCz-St-fTx"/>
+                <constraint firstItem="rA1-eI-QHc" firstAttribute="top" secondItem="IAa-xf-Wkl" secondAttribute="bottom" constant="76" id="w1J-qx-fA6"/>
+                <constraint firstItem="gb9-9E-kYV" firstAttribute="top" secondItem="d1N-JV-Ele" secondAttribute="bottom" constant="20" id="zaP-CH-lh2"/>
+                <constraint firstItem="Wzh-J1-H0v" firstAttribute="trailing" secondItem="IAa-xf-Wkl" secondAttribute="trailing" id="zpo-vw-VpO"/>
+            </constraints>
+            <point key="canvasLocation" x="51.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

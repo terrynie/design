@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322FEFCE55DF85422ADE90D6 /* libPods-exchange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2447FC0B39B03FAAF88953 /* libPods-exchange.a */; };
+		DE19E9B31EBD957A00036B76 /* PNChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE19E9B11EBD957A00036B76 /* PNChartViewController.m */; };
+		DE1E2BEB1EC1959700DE0834 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1E2BEA1EC1959700DE0834 /* ListViewController.m */; };
+		DE40C5C11EBF789700515B57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE40C5C01EBF789700515B57 /* SystemConfiguration.framework */; };
+		DE40C5C51EBF793B00515B57 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DE40C5C41EBF793B00515B57 /* Reachability.m */; };
+		DE40C5C91EC01BFE00515B57 /* Reachable.m in Sources */ = {isa = PBXBuildFile; fileRef = DE40C5C81EC01BFE00515B57 /* Reachable.m */; };
+		DE40C5CD1EC0457E00515B57 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE40C5CB1EC0457E00515B57 /* LoginViewController.m */; };
+		DE40C5CE1EC0457E00515B57 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE40C5CC1EC0457E00515B57 /* LoginViewController.xib */; };
+		DE40C5D21EC04E8C00515B57 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE40C5D01EC04E8C00515B57 /* SignUpViewController.m */; };
+		DE40C5D31EC04E8C00515B57 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE40C5D11EC04E8C00515B57 /* SignUpViewController.xib */; };
+		DE40C5FD1EC0AA9100515B57 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE40C5F81EC0AA6300515B57 /* Charts.framework */; };
+		DE40C5FE1EC0AA9100515B57 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE40C5F81EC0AA6300515B57 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE40C6031EC0AABF00515B57 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40C6021EC0AABF00515B57 /* test.swift */; };
+		DE40C6081EC0D32A00515B57 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE40C6061EC0D32A00515B57 /* ChangePasswordViewController.m */; };
+		DE40C6091EC0D32A00515B57 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE40C6071EC0D32A00515B57 /* ChangePasswordViewController.xib */; };
 		DE9623311EBC3004001414C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623301EBC3004001414C9 /* main.m */; };
 		DE9623341EBC3004001414C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623331EBC3004001414C9 /* AppDelegate.m */; };
 		DE9623371EBC3004001414C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623361EBC3004001414C9 /* ViewController.m */; };
@@ -15,9 +30,46 @@
 		DE96233F1EBC3004001414C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE96233D1EBC3004001414C9 /* LaunchScreen.storyboard */; };
 		DE96234A1EBC3004001414C9 /* exchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623491EBC3004001414C9 /* exchangeTests.m */; };
 		DE9623551EBC3004001414C9 /* exchangeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623541EBC3004001414C9 /* exchangeUITests.m */; };
+		DE9623641EBC4121001414C9 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623631EBC4121001414C9 /* CalculatorViewController.m */; };
+		DE9623671EBC4180001414C9 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623661EBC4180001414C9 /* FavoriteViewController.m */; };
+		DE96236A1EBC419F001414C9 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9623691EBC419F001414C9 /* AccountViewController.m */; };
+		DED188B11EBC4B2300475D5F /* PNChart in Resources */ = {isa = PBXBuildFile; fileRef = DED188B01EBC4B2300475D5F /* PNChart */; };
+		DED188B41EBC519E00475D5F /* ExchangeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED188B31EBC519E00475D5F /* ExchangeListViewController.m */; };
+		DED188B81EBC610D00475D5F /* Exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = DED188B71EBC610D00475D5F /* Exchange.m */; };
+		DED188BD1EBC94C700475D5F /* ExchangeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED188BB1EBC94C700475D5F /* ExchangeCellTableViewCell.m */; };
+		DED188BE1EBC94C700475D5F /* ExchangeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED188BC1EBC94C700475D5F /* ExchangeCellTableViewCell.xib */; };
+		DEF2CA241EC29C73006A64E1 /* ParityXFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CA231EC29C73006A64E1 /* ParityXFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DE40C5F71EC0AA6300515B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE40C5F11EC0AA6300515B57 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		DE40C5F91EC0AA6300515B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE40C5F11EC0AA6300515B57 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		DE40C5FB1EC0AA6300515B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE40C5F11EC0AA6300515B57 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		DE40C5FF1EC0AA9100515B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE40C5F11EC0AA6300515B57 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 		DE9623461EBC3004001414C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE9623241EBC3004001414C9 /* Project object */;
@@ -34,7 +86,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DE40C5F01EC0A8B700515B57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE40C5FE1EC0AA9100515B57 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2CD23AC394192A3785A6FAC6 /* Pods-exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-exchange/Pods-exchange.release.xcconfig"; sourceTree = "<group>"; };
+		5B2447FC0B39B03FAAF88953 /* libPods-exchange.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exchange.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B3C1DE28A519B3DC20695F /* Pods-exchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exchange/Pods-exchange.debug.xcconfig"; sourceTree = "<group>"; };
+		DE19E9B01EBD957A00036B76 /* PNChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartViewController.h; sourceTree = "<group>"; };
+		DE19E9B11EBD957A00036B76 /* PNChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartViewController.m; sourceTree = "<group>"; };
+		DE1E2BE91EC1959700DE0834 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		DE1E2BEA1EC1959700DE0834 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		DE40C5C01EBF789700515B57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DE40C5C31EBF793B00515B57 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../Reachability.h; sourceTree = "<group>"; };
+		DE40C5C41EBF793B00515B57 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../Reachability.m; sourceTree = "<group>"; };
+		DE40C5C71EC01BFE00515B57 /* Reachable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachable.h; sourceTree = "<group>"; };
+		DE40C5C81EC01BFE00515B57 /* Reachable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachable.m; sourceTree = "<group>"; };
+		DE40C5CA1EC0457E00515B57 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		DE40C5CB1EC0457E00515B57 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		DE40C5CC1EC0457E00515B57 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		DE40C5CF1EC04E8C00515B57 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		DE40C5D01EC04E8C00515B57 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		DE40C5D11EC04E8C00515B57 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		DE40C5F11EC0AA6300515B57 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		DE40C6011EC0AABF00515B57 /* exchange-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "exchange-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE40C6021EC0AABF00515B57 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		DE40C6051EC0D32A00515B57 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		DE40C6061EC0D32A00515B57 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		DE40C6071EC0D32A00515B57 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		DE96232C1EBC3004001414C9 /* exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9623301EBC3004001414C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE9623321EBC3004001414C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +141,22 @@
 		DE9623501EBC3004001414C9 /* exchangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exchangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9623541EBC3004001414C9 /* exchangeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exchangeUITests.m; sourceTree = "<group>"; };
 		DE9623561EBC3004001414C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE9623621EBC4121001414C9 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		DE9623631EBC4121001414C9 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		DE9623651EBC4180001414C9 /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		DE9623661EBC4180001414C9 /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
+		DE9623681EBC419F001414C9 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		DE9623691EBC419F001414C9 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		DED188B01EBC4B2300475D5F /* PNChart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PNChart; sourceTree = "<group>"; };
+		DED188B21EBC519E00475D5F /* ExchangeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeListViewController.h; sourceTree = "<group>"; };
+		DED188B31EBC519E00475D5F /* ExchangeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeListViewController.m; sourceTree = "<group>"; };
+		DED188B61EBC610D00475D5F /* Exchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exchange.h; sourceTree = "<group>"; };
+		DED188B71EBC610D00475D5F /* Exchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exchange.m; sourceTree = "<group>"; };
+		DED188BA1EBC94C700475D5F /* ExchangeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeCellTableViewCell.h; sourceTree = "<group>"; };
+		DED188BB1EBC94C700475D5F /* ExchangeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeCellTableViewCell.m; sourceTree = "<group>"; };
+		DED188BC1EBC94C700475D5F /* ExchangeCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExchangeCellTableViewCell.xib; sourceTree = "<group>"; };
+		DEF2CA221EC29C73006A64E1 /* ParityXFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParityXFormatter.h; sourceTree = "<group>"; };
+		DEF2CA231EC29C73006A64E1 /* ParityXFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParityXFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +164,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE40C5FD1EC0AA9100515B57 /* Charts.framework in Frameworks */,
+				DE40C5C11EBF789700515B57 /* SystemConfiguration.framework in Frameworks */,
+				322FEFCE55DF85422ADE90D6 /* libPods-exchange.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +187,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B09AD8306D3550887C0D19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE40C5C01EBF789700515B57 /* SystemConfiguration.framework */,
+				5B2447FC0B39B03FAAF88953 /* libPods-exchange.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		349BA19FD2F4F80CE0C7138C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B3C1DE28A519B3DC20695F /* Pods-exchange.debug.xcconfig */,
+				2CD23AC394192A3785A6FAC6 /* Pods-exchange.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE40C5C61EC01BE700515B57 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE40C5C71EC01BFE00515B57 /* Reachable.h */,
+				DE40C5C81EC01BFE00515B57 /* Reachable.m */,
+				DEF2CA221EC29C73006A64E1 /* ParityXFormatter.h */,
+				DEF2CA231EC29C73006A64E1 /* ParityXFormatter.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		DE40C5F21EC0AA6300515B57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE40C5F81EC0AA6300515B57 /* Charts.framework */,
+				DE40C5FA1EC0AA6300515B57 /* ChartsRealm.framework */,
+				DE40C5FC1EC0AA6300515B57 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DE9623231EBC3004001414C9 = {
 			isa = PBXGroup;
 			children = (
+				DE40C5F11EC0AA6300515B57 /* Charts.xcodeproj */,
+				DE40C5C61EC01BE700515B57 /* utils */,
+				DED188B91EBC94A100475D5F /* View */,
+				DED188B51EBC5EB800475D5F /* Model */,
 				DE96232E1EBC3004001414C9 /* exchange */,
 				DE9623481EBC3004001414C9 /* exchangeTests */,
 				DE9623531EBC3004001414C9 /* exchangeUITests */,
 				DE96232D1EBC3004001414C9 /* Products */,
+				DED188B01EBC4B2300475D5F /* PNChart */,
+				349BA19FD2F4F80CE0C7138C /* Pods */,
+				11B09AD8306D3550887C0D19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +256,9 @@
 		DE96232E1EBC3004001414C9 /* exchange */ = {
 			isa = PBXGroup;
 			children = (
+				DE40C5CA1EC0457E00515B57 /* LoginViewController.h */,
+				DE40C5CB1EC0457E00515B57 /* LoginViewController.m */,
+				DE40C5CC1EC0457E00515B57 /* LoginViewController.xib */,
 				DE9623321EBC3004001414C9 /* AppDelegate.h */,
 				DE9623331EBC3004001414C9 /* AppDelegate.m */,
 				DE9623351EBC3004001414C9 /* ViewController.h */,
@@ -108,8 +266,30 @@
 				DE9623381EBC3004001414C9 /* Main.storyboard */,
 				DE96233B1EBC3004001414C9 /* Assets.xcassets */,
 				DE96233D1EBC3004001414C9 /* LaunchScreen.storyboard */,
+				DE40C5C31EBF793B00515B57 /* Reachability.h */,
+				DE40C5C41EBF793B00515B57 /* Reachability.m */,
 				DE9623401EBC3004001414C9 /* Info.plist */,
 				DE96232F1EBC3004001414C9 /* Supporting Files */,
+				DE9623621EBC4121001414C9 /* CalculatorViewController.h */,
+				DE9623631EBC4121001414C9 /* CalculatorViewController.m */,
+				DE9623651EBC4180001414C9 /* FavoriteViewController.h */,
+				DE9623661EBC4180001414C9 /* FavoriteViewController.m */,
+				DE9623681EBC419F001414C9 /* AccountViewController.h */,
+				DE9623691EBC419F001414C9 /* AccountViewController.m */,
+				DED188B21EBC519E00475D5F /* ExchangeListViewController.h */,
+				DED188B31EBC519E00475D5F /* ExchangeListViewController.m */,
+				DE19E9B01EBD957A00036B76 /* PNChartViewController.h */,
+				DE19E9B11EBD957A00036B76 /* PNChartViewController.m */,
+				DE40C5CF1EC04E8C00515B57 /* SignUpViewController.h */,
+				DE40C5D01EC04E8C00515B57 /* SignUpViewController.m */,
+				DE40C5D11EC04E8C00515B57 /* SignUpViewController.xib */,
+				DE40C6021EC0AABF00515B57 /* test.swift */,
+				DE40C6011EC0AABF00515B57 /* exchange-Bridging-Header.h */,
+				DE40C6051EC0D32A00515B57 /* ChangePasswordViewController.h */,
+				DE40C6061EC0D32A00515B57 /* ChangePasswordViewController.m */,
+				DE40C6071EC0D32A00515B57 /* ChangePasswordViewController.xib */,
+				DE1E2BE91EC1959700DE0834 /* ListViewController.h */,
+				DE1E2BEA1EC1959700DE0834 /* ListViewController.m */,
 			);
 			path = exchange;
 			sourceTree = "<group>";
@@ -140,6 +320,25 @@
 			path = exchangeUITests;
 			sourceTree = "<group>";
 		};
+		DED188B51EBC5EB800475D5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DED188B61EBC610D00475D5F /* Exchange.h */,
+				DED188B71EBC610D00475D5F /* Exchange.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DED188B91EBC94A100475D5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DED188BA1EBC94C700475D5F /* ExchangeCellTableViewCell.h */,
+				DED188BB1EBC94C700475D5F /* ExchangeCellTableViewCell.m */,
+				DED188BC1EBC94C700475D5F /* ExchangeCellTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,13 +346,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE9623591EBC3004001414C9 /* Build configuration list for PBXNativeTarget "exchange" */;
 			buildPhases = (
+				3CDE639CFEF9BE2B3EC7E7B1 /* [CP] Check Pods Manifest.lock */,
 				DE9623281EBC3004001414C9 /* Sources */,
 				DE9623291EBC3004001414C9 /* Frameworks */,
 				DE96232A1EBC3004001414C9 /* Resources */,
+				303E2AF91BDC31E7F180736C /* [CP] Embed Pods Frameworks */,
+				8A96833CC9BE56C99F8EC82A /* [CP] Copy Pods Resources */,
+				DE40C5F01EC0A8B700515B57 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE40C6001EC0AA9100515B57 /* PBXTargetDependency */,
 			);
 			name = exchange;
 			productName = exchange;
@@ -207,6 +411,7 @@
 				TargetAttributes = {
 					DE96232B1EBC3004001414C9 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					DE9623441EBC3004001414C9 = {
@@ -232,6 +437,12 @@
 			mainGroup = DE9623231EBC3004001414C9;
 			productRefGroup = DE96232D1EBC3004001414C9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DE40C5F21EC0AA6300515B57 /* Products */;
+					ProjectRef = DE40C5F11EC0AA6300515B57 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DE96232B1EBC3004001414C9 /* exchange */,
@@ -241,14 +452,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		DE40C5F81EC0AA6300515B57 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = DE40C5F71EC0AA6300515B57 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DE40C5FA1EC0AA6300515B57 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = DE40C5F91EC0AA6300515B57 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DE40C5FC1EC0AA6300515B57 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = DE40C5FB1EC0AA6300515B57 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		DE96232A1EBC3004001414C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE96233F1EBC3004001414C9 /* LaunchScreen.storyboard in Resources */,
+				DED188BE1EBC94C700475D5F /* ExchangeCellTableViewCell.xib in Resources */,
+				DE40C6091EC0D32A00515B57 /* ChangePasswordViewController.xib in Resources */,
+				DE40C5D31EC04E8C00515B57 /* SignUpViewController.xib in Resources */,
+				DE40C5CE1EC0457E00515B57 /* LoginViewController.xib in Resources */,
 				DE96233C1EBC3004001414C9 /* Assets.xcassets in Resources */,
 				DE96233A1EBC3004001414C9 /* Main.storyboard in Resources */,
+				DED188B11EBC4B2300475D5F /* PNChart in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,14 +508,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		303E2AF91BDC31E7F180736C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exchange/Pods-exchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CDE639CFEF9BE2B3EC7E7B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A96833CC9BE56C99F8EC82A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exchange/Pods-exchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE9623281EBC3004001414C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED188B81EBC610D00475D5F /* Exchange.m in Sources */,
+				DE40C6081EC0D32A00515B57 /* ChangePasswordViewController.m in Sources */,
+				DE40C5C91EC01BFE00515B57 /* Reachable.m in Sources */,
+				DE40C5CD1EC0457E00515B57 /* LoginViewController.m in Sources */,
+				DED188B41EBC519E00475D5F /* ExchangeListViewController.m in Sources */,
+				DE9623671EBC4180001414C9 /* FavoriteViewController.m in Sources */,
+				DE40C5C51EBF793B00515B57 /* Reachability.m in Sources */,
+				DE1E2BEB1EC1959700DE0834 /* ListViewController.m in Sources */,
+				DE19E9B31EBD957A00036B76 /* PNChartViewController.m in Sources */,
 				DE9623371EBC3004001414C9 /* ViewController.m in Sources */,
 				DE9623341EBC3004001414C9 /* AppDelegate.m in Sources */,
+				DE9623641EBC4121001414C9 /* CalculatorViewController.m in Sources */,
+				DEF2CA241EC29C73006A64E1 /* ParityXFormatter.m in Sources */,
+				DE96236A1EBC419F001414C9 /* AccountViewController.m in Sources */,
 				DE9623311EBC3004001414C9 /* main.m in Sources */,
+				DE40C5D21EC04E8C00515B57 /* SignUpViewController.m in Sources */,
+				DE40C6031EC0AABF00515B57 /* test.swift in Sources */,
+				DED188BD1EBC94C700475D5F /* ExchangeCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +601,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DE40C6001EC0AA9100515B57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = DE40C5FF1EC0AA9100515B57 /* PBXContainerItemProxy */;
+		};
 		DE9623471EBC3004001414C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DE96232B1EBC3004001414C9 /* exchange */;
@@ -333,6 +641,7 @@
 		DE9623571EBC3004001414C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -381,6 +690,7 @@
 		DE9623581EBC3004001414C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -422,29 +732,43 @@
 		};
 		DE96235A1EBC3004001414C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B3C1DE28A519B3DC20695F /* Pods-exchange.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = exchange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = terrynie.com.exchange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "exchange/exchange-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		DE96235B1EBC3004001414C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CD23AC394192A3785A6FAC6 /* Pods-exchange.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = exchange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = terrynie.com.exchange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "exchange/exchange-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		DE96235D1EBC3004001414C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = exchangeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -457,6 +781,7 @@
 		DE96235E1EBC3004001414C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = exchangeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -469,6 +794,7 @@
 		DE9623601EBC3004001414C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = exchangeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = terrynie.com.exchangeUITests;
@@ -480,6 +806,7 @@
 		DE9623611EBC3004001414C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = exchangeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = terrynie.com.exchangeUITests;
@@ -507,6 +834,7 @@
 				DE96235B1EBC3004001414C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE96235C1EBC3004001414C9 /* Build configuration list for PBXNativeTarget "exchangeTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +843,7 @@
 				DE96235E1EBC3004001414C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE96235F1EBC3004001414C9 /* Build configuration list for PBXNativeTarget "exchangeUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +852,7 @@
 				DE9623611EBC3004001414C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
