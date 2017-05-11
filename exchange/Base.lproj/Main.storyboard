@@ -208,29 +208,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTw-dj-FUv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sl9-Rb-ppD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="554" id="oQo-jt-CRr"/>
-                                    <constraint firstAttribute="width" constant="375" id="wWb-R9-Wsc"/>
-                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cTw-dj-FUv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d3i-qI-fse"/>
-                            <constraint firstItem="cTw-dj-FUv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="nQD-op-k3H"/>
+                            <constraint firstItem="sl9-Rb-ppD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LYm-hq-xie"/>
+                            <constraint firstItem="sl9-Rb-ppD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="NHU-el-BG0"/>
+                            <constraint firstItem="sl9-Rb-ppD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZbM-EV-fE6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sl9-Rb-ppD" secondAttribute="trailing" constant="-16" id="vZL-ow-XoU"/>
+                            <constraint firstItem="sl9-Rb-ppD" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="xK6-eY-cXz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="收  藏" image="favorite" id="XQb-Rm-VR9"/>
                     <connections>
-                        <outlet property="tableView" destination="cTw-dj-FUv" id="b4y-M9-1wc"/>
+                        <outlet property="tableView" destination="sl9-Rb-ppD" id="alY-rX-1LI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1234.4000000000001" y="-679.61019490254876"/>
+            <point key="canvasLocation" x="-1241" y="-693"/>
         </scene>
     </scenes>
     <resources>

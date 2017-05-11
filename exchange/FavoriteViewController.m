@@ -8,6 +8,7 @@
 
 #import "FavoriteViewController.h"
 #import "ExchangeCellTableViewCell.h"
+#import "Reachable.h"
 
 @interface FavoriteViewController ()
 @property NSMutableArray *arr;
@@ -17,24 +18,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
-    NSData *data = [[[NSUserDefaults standardUserDefaults] objectForKey:@"favorite"] dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"favorite"]);
-    NSError *err;
-    NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
-    
-    if (err) {
-        NSLog(@"%@", err);
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"username"] || ![[NSUserDefaults standardUserDefaults] objectForKey:@"token"]){
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.removeFromSuperViewOnHide =YES;
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"登录后才能查看哟！";
+        hud.minSize = CGSizeMake(132.f, 108.0f);
+        [hud hide:YES afterDelay:1.5];
+        
     } else {
-        for (int i = 0; i < [json count]; i++) {
-            Exchange *e = [[Exchange alloc] initWithObject:[json objectAtIndex:i]];
-            [self.arr addObject:e];
-        }
+        [self read];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(reload) userInfo:nil repeats:NO];
     }
+}
 
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(reload) userInfo:nil repeats:NO];
-    // Do any additional setup after loading the view.
+-(void)viewWillAppear:(BOOL)animated {
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"username"] || ![[NSUserDefaults standardUserDefaults] objectForKey:@"token"]){
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.removeFromSuperViewOnHide =YES;
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"登录后才能查看哟！";
+        hud.minSize = CGSizeMake(132.f, 108.0f);
+        [hud hide:YES afterDelay:1.5];
+        _arr = nil;
+        [_tableView reloadData];
+    } else {
+        [self read];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,7 +82,7 @@
         cell.cenPrice1.textColor = [UIColor lightGrayColor];
     }
     cell.currency.text = [[_arr objectAtIndex:indexPath.row] currency];
-    cell.currency1.text = [[_arr objectAtIndex:indexPath.row] currency];
+    cell.currency1.text = [[_arr objectAtIndex:indexPath.row] bank];
     cell.remittanceBuyPrice.text = [NSString stringWithFormat:@"%.4f",[[[_arr objectAtIndex:indexPath.row] remittanceBuyPrice] floatValue]];
     cell.cashBuyPrice.text = [NSString stringWithFormat:@"%.4f", [[[_arr objectAtIndex:indexPath.row] cashBuyPrice] floatValue]];
     cell.sellPrice.text = [NSString stringWithFormat:@"%.4f", [[[_arr objectAtIndex:indexPath.row] sellPrice] floatValue]];
@@ -93,6 +103,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void) read {
+    _arr = [[NSMutableArray alloc] init];
+    //    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 70, self.view.bounds.size.width, self.view.bounds.size.height - 70)];
+    _tableView.dataSource = self;
+    _tableView.rowHeight = 90;
+    _tableView.delegate = self;
+    NSData *data = [[[NSUserDefaults standardUserDefaults] objectForKey:@"favorite"] dataUsingEncoding:NSUTF8StringEncoding];
+    //    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"favorite"]);
+    NSError *err;
+    NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
+    //    NSLog(@"%@", json);
+    if (err) {
+        NSLog(@"%@", err);
+    } else {
+        for (int i = 0; i < [json count]; i++) {
+            Exchange *e = [[Exchange alloc] initWithObject:[json objectAtIndex:i]];
+            [self.arr addObject:e];
+        }
+        NSLog(@"%@", self.arr);
+    }
+
+}
 
 -(void) reload {
     [self.tableView reloadData];

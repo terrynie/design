@@ -30,4 +30,8 @@
     _cenPrice.text = exchange.cenPrice;
     return self;
 }
+
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
 @end

@@ -19,6 +19,7 @@
 @property NSMutableArray *json2;
 @property UISegmentedControl *sgctl;
 @property UISegmentedControl *sgctl1;
+@property UISegmentedControl *sgctl2;
 @property UILabel *best;
 @property UILabel *badest;
 @property int days;
@@ -43,6 +44,10 @@
     [_sgctl1 setSegmentedControlStyle:UISegmentedControlStyleBar];
     [_sgctl1 addTarget:self action:@selector(selectSegment1:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:_sgctl1];
+    
+    _sgctl2 = [[UISegmentedControl alloc] initWithItems:@[@"最近一周", @"最近一月"]];
+    _sgctl2.frame = CGRectMake(100, 480, self.view.bounds.size.width - 200, 30);
+    [_sgctl2 addTarget:self action:@selector(selectSegment1:) forControlEvents:UIControlEventValueChanged];
     
     _best = [[UILabel alloc] initWithFrame:CGRectMake(10, 480, self.view.bounds.size.width-20, 30)];
     _best.textAlignment = NSTextAlignmentCenter;
@@ -256,43 +261,73 @@
 }
 
 -(void) selectSgcl: (UISegmentedControl *) sender {
-    if ([sender selectedSegmentIndex] == 0) {
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            NSString *urlStr = [NSString stringWithFormat:@"https://exchange.terrynie.com/exchange/parity?currency=%@", _currency];
-            NSString *encoding = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-            NSURL *url = [NSURL URLWithString:encoding];
-            NSError *err;
-            NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&err];
-            _json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
-            if (err) {
-                NSLog(@"%@", err);
-            } else {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.lch removeFromSuperview];
-                    [self.view addSubview:_chartView];
-                    [self selectSegment1:_sgctl1];
-                });
-            }
-        });
+    if ([_sgctl selectedSegmentIndex] == 0) {
+        if (!_json) {
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                NSString *urlStr = [NSString stringWithFormat:@"https://exchange.terrynie.com/exchange/parity?currency=%@", _currency];
+                NSString *encoding = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                NSURL *url = [NSURL URLWithString:encoding];
+                NSError *err;
+                NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&err];
+                _json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
+                if (err) {
+                    NSLog(@"%@", err);
+                } else {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.lch removeFromSuperview];
+                        [self.sgctl2 removeFromSuperview];
+                        [self.view addSubview:_chartView];
+                        [self.view addSubview:_badest];
+                        [self.view addSubview:_best];
+                        [self selectSegment1:_sgctl1];
+                    });
+                }
+            });
+        } else {
+            [self.lch removeFromSuperview];
+            [self.sgctl2 removeFromSuperview];
+            [self.view addSubview:_chartView];
+            [self.view addSubview:_badest];
+            [self.view addSubview:_best];
+            [self selectSegment1:_sgctl1];
+        }
+        
     } else {
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            NSString *urlStr = [NSString stringWithFormat:@"https://exchange.terrynie.com/exchange/exchangeByDays?currency=%@&bank=%@&days=%d", _currency, _bank, _days];
-            NSString *encoding = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-            NSURL *url = [NSURL URLWithString:encoding];
-            NSError *err;
-            NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&err];
-            _json2 = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
-            if (err) {
-                NSLog(@"%@", err);
-            } else {
-                dispatch_async(dispatch_get_main_queue(), ^{
-//                    [self selectSegment1:_sgctl1];
-                    [self.chartView removeFromSuperview];
-                    [self.view addSubview:_lch];
-                    [self selectSegment1:_sgctl1];
-                });
+        if(!_json2) {
+            if ([_sgctl2 selectedSegmentIndex] == 0) {
+                _days = 7;
+            } else if ([_sgctl2 selectedSegmentIndex] == 1) {
+                _days = 30;
             }
-        });
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                NSString *urlStr = [NSString stringWithFormat:@"https://exchange.terrynie.com/exchange/exchangeByDays?currency=%@&bank=%@&days=%d", _currency, _bank, _days];
+                NSString *encoding = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                NSURL *url = [NSURL URLWithString:encoding];
+                NSError *err;
+                NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&err];
+                _json2 = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
+                if (err) {
+                    NSLog(@"%@", err);
+                } else {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        //                    [self selectSegment1:_sgctl1];
+                        [self.chartView removeFromSuperview];
+                        [_best removeFromSuperview];
+                        [_badest removeFromSuperview];
+                        [self.view addSubview:_lch];
+                        [self.view addSubview:_sgctl2];
+                        [self selectSegment1:_sgctl1];
+                    });
+                }
+            });
+        } else {
+            [self.chartView removeFromSuperview];
+            [_best removeFromSuperview];
+            [_badest removeFromSuperview];
+            [self.view addSubview:_lch];
+            [self.view addSubview:_sgctl2];
+            [self selectSegment1:_sgctl1];
+        }
     }
 }
 

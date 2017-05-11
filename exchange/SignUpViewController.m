@@ -67,6 +67,10 @@
         hud.labelText = [NSString stringWithFormat:@"验证码发送成功，请查收！"];
         hud.minSize = CGSizeMake(132.f, 108.0f);
         [hud hide:YES afterDelay:3];
+        NSString *urlStr = [NSString stringWithFormat:@"https://exchange.terrynie.com/users/verifyCode?phone=%@", phone];
+        NSString *encoding = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSURL *url = [NSURL URLWithString:encoding];
+        NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:nil];
     }
 }
 
